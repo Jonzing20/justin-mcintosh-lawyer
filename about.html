@@ -3,71 +3,128 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Justin McIntosh</title>
+  <title>About | Justin McIntosh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
+    * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-      color: #1f2933;
-      background: #f9fafb;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #020617, #0f172a);
+      color: #f8fafc;
     }
     header {
-      background: #0f172a;
-      color: #ffffff;
-      padding: 20px;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      background: rgba(2,6,23,0.9);
+      backdrop-filter: blur(8px);
+      z-index: 1000;
+    }
+    nav {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
     }
     nav a {
-      color: #ffffff;
-      margin-right: 15px;
+      color: #e5e7eb;
       text-decoration: none;
-      font-weight: bold;
+      margin-left: 20px;
+      font-weight: 500;
     }
-    .container {
+    nav a:hover { color: #38bdf8; }
+    section {
       max-width: 1000px;
       margin: auto;
-      padding: 30px 20px;
+      padding: 90px 20px;
     }
     h1, h2 {
-      color: #0f172a;
+      color: #38bdf8;
+    }
+    .about-card {
+      background: #020617;
+      padding: 40px;
+      border-radius: 18px;
+      box-shadow: 0 0 30px rgba(56,189,248,0.08);
+    }
+    .timeline {
+      margin-top: 50px;
+      display: grid;
+      gap: 25px;
+    }
+    .timeline-item {
+      padding-left: 20px;
+      border-left: 3px solid #38bdf8;
+    }
+    .highlight {
+      background: rgba(56,189,248,0.08);
+      padding: 25px;
+      border-radius: 16px;
+      margin-top: 50px;
     }
     footer {
-      background: #0f172a;
-      color: #ffffff;
       text-align: center;
-      padding: 15px;
-      margin-top: 40px;
+      padding: 30px 20px;
+      background: #020617;
+      opacity: 0.85;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <nav class="container">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
+  <nav>
+    <strong>Justin McIntosh</strong>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
   </nav>
 </header>
 
-<div class="container">
-  <h1>About Justin McIntosh</h1>
+<section>
+  <div class="about-card">
+    <h1>About Justin McIntosh</h1>
+    <p>
+      Justin McIntosh is a dedicated, results-driven attorney respected for his integrity, persistence, and unwavering commitment to client advocacy. He is widely recognized for handling sensitive and complex legal matters with precision, discretion, and strategic focus.
+    </p>
+    <p>
+      With years of hands-on experience navigating demanding legal systems, Justin has built a reputation as a lawyer who does not retreat when outcomes matter most. His work spans court compliance, rehabilitation programs, and parole-related legal matters, where attention to detail and persistence are critical.
+    </p>
 
-  <p>
-    Justin McIntosh is a respected attorney recognized for his integrity, persistence, and unwavering dedication to his clients. Known for clear communication and effective advocacy, he has helped many individuals move forward when legal circumstances seemed stalled or overwhelming.
-  </p>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h2>Strategic Case Management</h2>
+        <p>
+          Justin carefully analyzes every aspect of a case, working directly with courts, boards, and legal authorities to pursue fair, timely, and lawful outcomes for his clients.
+        </p>
+      </div>
+      <div class="timeline-item">
+        <h2>Clear Communication</h2>
+        <p>
+          Known for his ability to communicate complex legal matters clearly, Justin ensures clients remain informed, confident, and prepared at every stage of the legal process.
+        </p>
+      </div>
+      <div class="timeline-item">
+        <h2>Client-Centered Representation</h2>
+        <p>
+          Justin understands that legal challenges affect families, health, and futures—not just documentation. Every case is approached with empathy, professionalism, and determination.
+        </p>
+      </div>
+    </div>
 
-  <p>
-    Justin is particularly skilled in managing complex cases involving court compliance, rehabilitation programs, and parole-related matters. He takes a thorough and strategic approach, carefully analyzing every detail while working persistently with courts, boards, and legal authorities.
-  </p>
-
-  <p>
-    What truly sets Justin apart is his personal investment in the people he represents. He understands that legal matters impact families, health, and livelihoods—not just paperwork. For this reason, he approaches every case with professionalism, discretion, and determination.
-  </p>
-
-  <p>
-    Dedicated to protecting his clients’ best interests, Justin continues to work tirelessly to resolve cases efficiently while ensuring his clients feel informed, supported, and confidently represented at every stage of the legal process.
-  </p>
-</div>
+    <div class="highlight">
+      <h2>Professional Philosophy</h2>
+      <p>
+        What sets Justin apart is his personal investment in each client’s outcome. He believes legal representation should be thorough, ethical, and relentless in protecting clients’ best interests. This philosophy has earned him trust across Canada and the United States.
+      </p>
+    </div>
+  </div>
+</section>
 
 <footer>
   <p>&copy; 2026 Justin McIntosh. All rights reserved.</p>
